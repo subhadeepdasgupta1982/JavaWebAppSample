@@ -1,4 +1,4 @@
-//author: Avik mazumder mazuma5
+//author: subhadeep
 pipeline {
     agent any
     tools {
@@ -23,12 +23,12 @@ pipeline {
         }
         stage('Upload') {
             steps {
-                sh 'curl -X PUT -u admin:password -T target/SimpleMavenJunitWebApp.war "http://localhost:8081/artifactory/libs-release-local/SimpleMavenJunitWebApp.war"'
+                sh 'curl -X PUT -u admin:password -T target/ROOT.war "http://localhost:8081/artifactory/libs-release-local/ROOT.war"'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'sudo cp -f target/SimpleMavenJunitWebApp.war /usr/share/tomcat/webapps'
+                sh 'sudo cp -f target/ROOT.war /usr/share/tomcat/webapps'
             }
         }
     }
