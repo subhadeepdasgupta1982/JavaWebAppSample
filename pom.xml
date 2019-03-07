@@ -103,6 +103,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <finalName>ROOT</finalName>
+        <finalName>SimpleWebApp</finalName>
     </build>
 </project>
