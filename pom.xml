@@ -80,7 +80,7 @@
                     <version>3.2.0</version>
                     <configuration>
                         <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                        <warName>ROOT</warName>
+                        <warName>SimpleWebApp</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>
                 </plugin>
@@ -104,5 +104,6 @@
             </plugins>
         </pluginManagement>
         <finalName>SimpleWebApp</finalName>
+        <outputDirectory>target</outputDirectory>
     </build>
 </project>
